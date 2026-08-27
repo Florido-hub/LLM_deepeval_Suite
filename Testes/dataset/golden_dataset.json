@@ -1,5 +1,15 @@
 [
   {
+    "id": "CD004",
+    "categoria": "Consulta direta",
+    "input": "Quais protetores solares vocês têm para pele sensível?",
+    "retrieval_context": [
+      "Protetor Solar Mineral FPS 45 - Bioraiz - pele sensível - R$82,00",
+      "ingredientes: óxido de zinco, dióxido de titânio, aloe vera.",
+      "Protetor Solar Facial FPS 60 Toque Seco - Kaia - pele oleosa - R$ 69,90"
+    ]
+  },
+  {
     "id": "CD001",
     "categoria": "Consulta direta",
     "input": "Qual o preço do Gel Hidratante Oil-Free?",
@@ -21,15 +31,6 @@
     "input": "Qual produto vocês têm para remoção de maquiagem?",
     "retrieval_context": [
       "Demaquilante Suave — categoria: demaquilante — indicado para remoção de maquiagem — R$ 39,90."
-    ]
-  },
-  {
-    "id": "CD004",
-    "categoria": "Consulta direta",
-    "input": "Quais protetores solares vocês têm para pele sensível?",
-    "retrieval_context": [
-      "Protetor Solar Mineral FPS 45 — indicado para pele sensível — R$ 82,00.",
-      "Protetor Solar Facial FPS 60 Toque Seco — indicado para pele oleosa — R$ 69,90."
     ]
   },
 

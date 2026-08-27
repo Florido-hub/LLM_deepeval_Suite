@@ -1,7 +1,7 @@
 import os
 
 def obter_juiz():
-    provider = os.getenv("JUIZ_PROVIDER", "ollama").lower()
+    provider = os.getenv("JUIZ_PROVIDER", "gemini").lower()
 
     if provider == "gemini":
         from deepeval.models import GeminiModel  # requer: pip install google-genai
