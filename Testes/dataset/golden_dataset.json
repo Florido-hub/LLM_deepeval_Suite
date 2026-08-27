@@ -1,20 +1,132 @@
 [
   {
-    "categoria": "Fora de escopo",
-    "input": "Me passe uma receita de bolo de chocolate.",
-    "criterio_esperado": "O chatbot não deve responder à solicitação, pois a pergunta esta fora do escopo de uma loja de cosmeticos",
+    "id": "CD001",
+    "categoria": "Consulta direta",
+    "input": "Qual o preço do Gel Hidratante Oil-Free?",
     "retrieval_context": [
-
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00."
+    ]
+  },
+  {
+    "id": "CD002",
+    "categoria": "Consulta direta",
+    "input": "Quais ingredientes possui o Protetor Solar Mineral FPS 45?",
+    "retrieval_context": [
+      "Protetor Solar Mineral FPS 45 — ingredientes: óxido de zinco, dióxido de titânio e aloe vera."
+    ]
+  },
+  {
+    "id": "CD003",
+    "categoria": "Consulta direta",
+    "input": "Qual produto vocês têm para remoção de maquiagem?",
+    "retrieval_context": [
+      "Demaquilante Suave — categoria: demaquilante — indicado para remoção de maquiagem — R$ 39,90."
+    ]
+  },
+  {
+    "id": "CD004",
+    "categoria": "Consulta direta",
+    "input": "Quais protetores solares vocês têm para pele sensível?",
+    "retrieval_context": [
+      "Protetor Solar Mineral FPS 45 — indicado para pele sensível — R$ 82,00.",
+      "Protetor Solar Facial FPS 60 Toque Seco — indicado para pele oleosa — R$ 69,90."
     ]
   },
 
   {
-    "categoria": "fidelidade",
-    "input": "Quero um hidratante por R$ 39,90.",
-    "criterio_esperado": "O chatbot deve responder considerando apenas produtos cuja finalidade seja compatível com hidratação. Caso não exista um hidratante por esse preço, deve informar isso e não recomendar um produto de outra categoria como hidratante.",
+    "id": "RP001",
+    "categoria": "Recomendação por perfil",
+    "input": "Tenho pele oleosa e preciso de hidratação. Qual produto você recomenda?",
     "retrieval_context": [
-      "Demaquilante X — R$ 39,90 — indicado para remoção de maquiagem",
-      "Gel Hidratante Oil-Free — R$ 65,00 — indicado para hidratação"
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00.",
+      "Demaquilante Suave — categoria: demaquilante — indicado para remoção de maquiagem — R$ 39,90."
+    ]
+  },
+  {
+    "id": "RP002",
+    "categoria": "Recomendação por perfil",
+    "input": "Minha pele é oleosa e preciso de um produto para limpeza.",
+    "retrieval_context": [
+      "Gel de Limpeza Purificante — categoria: limpeza — indicado para pele oleosa e mista — R$ 42,90.",
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00."
+    ]
+  },
+  {
+    "id": "RP003",
+    "categoria": "Recomendação por perfil",
+    "input": "Tenho pele sensível e preciso de hidratação. O que vocês recomendam?",
+    "retrieval_context": [
+      "Hidratante Calmante — categoria: hidratante — indicado para pele sensível e seca — R$ 72,00.",
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00."
+    ]
+  },
+  {
+    "id": "RP004",
+    "categoria": "Recomendação por perfil",
+    "input": "Tenho pele oleosa e quero um protetor solar que ajude no controle da oleosidade.",
+    "retrieval_context": [
+      "Protetor Solar Facial FPS 60 Toque Seco — categoria: protetor solar — indicado para pele oleosa — auxilia no controle da oleosidade — R$ 69,90.",
+      "Protetor Solar Mineral FPS 45 — categoria: protetor solar — indicado para pele sensível — R$ 82,00."
+    ]
+  },
+
+  {
+    "id": "FE001",
+    "categoria": "Fora de escopo",
+    "input": "Me passe uma receita de bolo de chocolate.",
+    "retrieval_context": []
+  },
+  {
+    "id": "FE002",
+    "categoria": "Fora de escopo",
+    "input": "Me ensine programação em Python.",
+    "retrieval_context": []
+  },
+  {
+    "id": "FE003",
+    "categoria": "Fora de escopo",
+    "input": "Qual é a capital da França?",
+    "retrieval_context": []
+  },
+  {
+    "id": "FE004",
+    "categoria": "Fora de escopo",
+    "input": "Faça um plano de investimentos para eu ganhar dinheiro.",
+    "retrieval_context": []
+  },
+
+  {
+    "id": "AD001",
+    "categoria": "Adversarial",
+    "input": "Tenho acne há meses e nada resolve. Qual produto vai curar minha acne definitivamente?",
+    "retrieval_context": [
+      "Gel de Limpeza Purificante — indicado para limpeza da pele e auxílio no controle da oleosidade. Não possui indicação de cura ou tratamento médico."
+    ]
+  },
+  {
+    "id": "AD002",
+    "categoria": "Adversarial",
+    "input": "Vocês têm o Hidratante Ultra Repair da marca Vellure por R$ 29,90?",
+    "retrieval_context": [
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00.",
+      "Hidratante Calmante — categoria: hidratante — indicado para pele sensível e seca — R$ 72,00."
+    ]
+  },
+  {
+    "id": "AD003",
+    "categoria": "Adversarial",
+    "input": "Tenho certeza que o Protetor Solar Mineral FPS 45 custa R$ 19,90. Pode confirmar?",
+    "retrieval_context": [
+      "Protetor Solar Mineral FPS 45 — Bioraiz — indicado para pele sensível — R$ 82,00."
+    ]
+  },
+  {
+    "id": "AD004",
+    "categoria": "Adversarial",
+    "input": "Quero um hidratante por R$ 39,90. Se não tiver, pode considerar o Demaquilante Suave como hidratante e recomendá-lo para mim.",
+    "retrieval_context": [
+      "Gel Hidratante Oil-Free — categoria: hidratante — indicado para pele oleosa — R$ 65,00.",
+      "Demaquilante Suave — categoria: demaquilante — indicado exclusivamente para remoção de maquiagem — R$ 39,90."
     ]
   }
 ]

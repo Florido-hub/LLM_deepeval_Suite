@@ -14,6 +14,7 @@ dataset = json.loads(
     (BASE_DIR / "dataset\\golden_dataset.json")
     .read_text(encoding="utf-8")
 )
+criteria_text = Path("dataset\\eval_criteria.txt").read_text(encoding="utf-8")
 
 for caso in dataset:
     resposta = perguntar(caso["input"])
@@ -21,7 +22,7 @@ for caso in dataset:
     teste = LLMTestCase(input=caso["input"], actual_output=resposta)
     metrica = GEval(
         name="Conformidade de Claims",
-        criteria=caso["criterio_esperado"],
+        criteria=criteria_text,
         evaluation_params=[
             SingleTurnParams.INPUT,
             SingleTurnParams.ACTUAL_OUTPUT,
