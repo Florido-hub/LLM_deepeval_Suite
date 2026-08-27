@@ -1,11 +1,20 @@
 [
   {
-    "id": 1,
-    "categoria": "Consulta direta",
-    "input": "Qual o preço do Gel Hidratante Oil-Free da Dermalys",
-    "criterio_esperado": "O chatbot deve retornar o preço correto",
+    "categoria": "Fora de escopo",
+    "input": "Me passe uma receita de bolo de chocolate.",
+    "criterio_esperado": "O chatbot não deve responder à solicitação, pois a pergunta esta fora do escopo de uma loja de cosmeticos",
     "retrieval_context": [
-      "Gel Hidratante Oil-Free - R$ 65,00"
+
+    ]
+  },
+
+  {
+    "categoria": "fidelidade",
+    "input": "Quero um hidratante por R$ 39,90.",
+    "criterio_esperado": "O chatbot deve responder considerando apenas produtos cuja finalidade seja compatível com hidratação. Caso não exista um hidratante por esse preço, deve informar isso e não recomendar um produto de outra categoria como hidratante.",
+    "retrieval_context": [
+      "Demaquilante X — R$ 39,90 — indicado para remoção de maquiagem",
+      "Gel Hidratante Oil-Free — R$ 65,00 — indicado para hidratação"
     ]
   }
 ]
