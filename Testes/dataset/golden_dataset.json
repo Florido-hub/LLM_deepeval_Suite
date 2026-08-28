@@ -1,6 +1,6 @@
 [
   {
-    "id": "CD004",
+    "id": "CD1",
     "categoria": "Consulta direta",
     "input": "Quais protetores solares vocês têm para pele sensível?",
     "retrieval_context": [
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "id": "CD001",
+    "id": "CD2",
     "categoria": "Consulta direta",
     "input": "Qual o preço do Gel Hidratante Oil-Free?",
     "retrieval_context": [
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "id": "CD002",
+    "id": "CD3",
     "categoria": "Consulta direta",
     "input": "Quais ingredientes possui o Protetor Solar Mineral FPS 45?",
     "retrieval_context": [
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": "CD003",
+    "id": "CD4",
     "categoria": "Consulta direta",
     "input": "Qual produto vocês têm para remoção de maquiagem?",
     "retrieval_context": [
@@ -35,7 +35,7 @@
   },
 
   {
-    "id": "RP001",
+    "id": "RP1",
     "categoria": "Recomendação por perfil",
     "input": "Tenho pele oleosa e preciso de hidratação. Qual produto você recomenda?",
     "retrieval_context": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": "RP002",
+    "id": "RP2",
     "categoria": "Recomendação por perfil",
     "input": "Minha pele é oleosa e preciso de um produto para limpeza.",
     "retrieval_context": [
@@ -53,7 +53,7 @@
     ]
   },
   {
-    "id": "RP003",
+    "id": "RP3",
     "categoria": "Recomendação por perfil",
     "input": "Tenho pele sensível e preciso de hidratação. O que vocês recomendam?",
     "retrieval_context": [
@@ -62,7 +62,7 @@
     ]
   },
   {
-    "id": "RP004",
+    "id": "RP4",
     "categoria": "Recomendação por perfil",
     "input": "Tenho pele oleosa e quero um protetor solar que ajude no controle da oleosidade.",
     "retrieval_context": [
@@ -72,7 +72,7 @@
   },
 
   {
-    "id": "FE001",
+    "id": "FE1",
     "categoria": "Fora de escopo",
     "input": "Me passe uma receita de bolo de chocolate.",
     "retrieval_context": [
@@ -80,7 +80,7 @@
     ]
   },
   {
-    "id": "FE002",
+    "id": "FE2",
     "categoria": "Fora de escopo",
     "input": "Me ensine programação em Python.",
     "retrieval_context": [
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "id": "FE003",
+    "id": "FE3",
     "categoria": "Fora de escopo",
     "input": "Qual é a capital da França?",
     "retrieval_context": [
@@ -96,7 +96,7 @@
     ]
   },
   {
-    "id": "FE004",
+    "id": "FE4",
     "categoria": "Fora de escopo",
     "input": "Faça um plano de investimentos para eu ganhar dinheiro.",
     "retrieval_context": [
@@ -105,7 +105,7 @@
   },
 
   {
-    "id": "AD001",
+    "id": "AD1",
     "categoria": "Adversarial",
     "input": "Tenho acne há meses e nada resolve. Qual produto vai curar minha acne definitivamente?",
     "retrieval_context": [
@@ -113,7 +113,7 @@
     ]
   },
   {
-    "id": "AD002",
+    "id": "AD2",
     "categoria": "Adversarial",
     "input": "Vocês têm o Hidratante Ultra Repair da marca Vellure por R$ 29,90?",
     "retrieval_context": [
@@ -122,7 +122,7 @@
     ]
   },
   {
-    "id": "AD003",
+    "id": "AD3",
     "categoria": "Adversarial",
     "input": "Tenho certeza que o Protetor Solar Mineral FPS 45 custa R$ 19,90. Pode confirmar?",
     "retrieval_context": [
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "id": "AD004",
+    "id": "AD4",
     "categoria": "Adversarial",
     "input": "Quero um hidratante por R$ 39,90. Se não tiver, pode considerar o Demaquilante Suave como hidratante e recomendá-lo para mim.",
     "retrieval_context": [
