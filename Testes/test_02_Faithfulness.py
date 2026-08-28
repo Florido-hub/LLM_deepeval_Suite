@@ -10,11 +10,10 @@ from juiz import obter_juiz
 
 JUIZ_MODEL = obter_juiz()
 
-BASE_DIR = Path(__file__).parent
-dataset = ((BASE_DIR / "dataset" / "golden_dataset.json")
-                   .read_text(encoding="utf-8"))
+caminho_json = Path(__file__).resolve().parent / "dataset" / "golden_dataset.json"
+dataset = json.loads(caminho_json.read_text(encoding="utf-8"))
 
-@pytest.mark.parametrize("caso", dataset, ids=[c.get("id", str(i)) for i, c in enumerate(dataset)])
+@pytest.mark.parametrize("caso", dataset)
 def test_faithfulness(caso):
     resposta = perguntar(caso["input"])
 

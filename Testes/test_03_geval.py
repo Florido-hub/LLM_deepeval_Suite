@@ -10,13 +10,15 @@ from juiz import obter_juiz
 
 JUIZ_MODEL = obter_juiz()
 
-BASE_DIR = Path(__file__).parent
-dataset = ((BASE_DIR / "dataset" / "golden_dataset.json")
-                   .read_text(encoding="utf-8"))
+BASE_DIR = Path(__file__).resolve().parent
 
-criteria_text = Path("dataset\\eval_criteria.txt").read_text(encoding="utf-8")
+caminho_criteria = BASE_DIR / "dataset" / "geval_criteria.txt"
+criteria_text = caminho_criteria.read_text(encoding="utf-8")
 
-@pytest.mark.parametrize("caso", dataset, ids=[c.get("id", str(i)) for i, c in enumerate(dataset)])
+caminho_json = Path(__file__).resolve().parent / "dataset" / "golden_dataset.json"
+dataset = json.loads(caminho_json.read_text(encoding="utf-8"))
+
+@pytest.mark.parametrize("caso", dataset)
 def test_geval_claims(caso):
     resposta = perguntar(caso["input"])
 
@@ -27,7 +29,7 @@ def test_geval_claims(caso):
 
     metrica_geval = GEval(
         name="Conformidade de Claims",
-        criteria=caso["criterio_esperado"],
+        criteria=criteria_text,
         evaluation_params=[
             SingleTurnParams.INPUT,
             SingleTurnParams.ACTUAL_OUTPUT,
