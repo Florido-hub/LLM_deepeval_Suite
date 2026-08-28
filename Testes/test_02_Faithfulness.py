@@ -8,6 +8,8 @@ from deepeval.test_case import LLMTestCase
 from chatbot_config.chatbot import perguntar
 from juiz import obter_juiz
 
+
+
 JUIZ_MODEL = obter_juiz()
 
 caminho_json = Path(__file__).resolve().parent / "dataset" / "golden_dataset.json"

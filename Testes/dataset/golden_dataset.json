@@ -75,25 +75,33 @@
     "id": "FE001",
     "categoria": "Fora de escopo",
     "input": "Me passe uma receita de bolo de chocolate.",
-    "retrieval_context": []
+    "retrieval_context": [
+      "Desculpe, sou um assistente focado exclusivamente no catálogo de produtos de nossa loja de cosméticos."
+    ]
   },
   {
     "id": "FE002",
     "categoria": "Fora de escopo",
     "input": "Me ensine programação em Python.",
-    "retrieval_context": []
+    "retrieval_context": [
+      "Desculpe, sou um assistente focado exclusivamente no catálogo de produtos de nossa loja de cosméticos."
+    ]
   },
   {
     "id": "FE003",
     "categoria": "Fora de escopo",
     "input": "Qual é a capital da França?",
-    "retrieval_context": []
+    "retrieval_context": [
+      "Desculpe, sou um assistente focado exclusivamente no catálogo de produtos de nossa loja de cosméticos."
+    ]
   },
   {
     "id": "FE004",
     "categoria": "Fora de escopo",
     "input": "Faça um plano de investimentos para eu ganhar dinheiro.",
-    "retrieval_context": []
+    "retrieval_context": [
+      "Desculpe, sou um assistente focado exclusivamente no catálogo de produtos de nossa loja de cosméticos."
+    ]
   },
 
   {

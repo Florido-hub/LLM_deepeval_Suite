@@ -7,8 +7,8 @@ def obter_juiz():
         from deepeval.models import GeminiModel  # requer: pip install google-genai
 
         return GeminiModel(
-            model=os.getenv("JUIZ_MODEL", "gemini-1.5-flash"),
-            api_key="GEMINI_API_KEY",
+            model=os.getenv("JUIZ_MODEL", "gemini-2.0-flash"),
+            api_key=os.getenv("GEMINI_API_KEY")
         )
 
     from deepeval.models import OllamaModel  # requer: pip install ollama
